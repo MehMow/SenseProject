@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, it's me.</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./bootstrap-year-calendar.min.css">
+        <link rel="stylesheet" href="tstyles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
+    </head>
+    <body>
+        <header class="tc ph4">
+            <h1 class="title">Mental Health Data: </h1>
+        </header>
+
+        <div id='calendar' class="calendar"> </div>
+
+        <div align="center">
+
+            <form action="information.html">
+                <button class ="coolbutton" >Information</button>
+            </form>
+
+            <button class="coolbutton" id='data' type="button" name="Data">Data</button>
+
+            <form action="trends.html">
+                <button class ="coolbutton" coorightbutton"">Trends</button>
+            </form>
+
+        </div>
+
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous">
+        </script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="./bootstrap-year-calendar.min.js"> </script>
+        <script>
+            $('#data').click(function(){
+                $('#calendar').calendar(); return false;
+            });
+        </script>
+
+    </body>
+</html>
